@@ -429,6 +429,7 @@ set(common_SRCS
 	database-sqlite3.cpp
 	database-redis.cpp
 	player.cpp
+	profiler.cpp
 	test.cpp
 	sha1.cpp
 	base64.cpp

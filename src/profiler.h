@@ -195,5 +195,20 @@ private:
 	enum ScopeProfilerType m_type;
 };
 
+class ScopeProfilerTree
+{
+public:
+	ScopeProfilerTree(const std::string& message);
+	~ScopeProfilerTree();
+private:
+	std::string getTimeString();
+
+	const u32 m_start_time;
+	const std::string m_current_message;
+	static u8 m_current_depth;
+	static std::vector <std::string> m_messages;
+	static bool m_has_children;
+};
+
 #endif
 
